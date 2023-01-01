@@ -4,15 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --mode development --open",
-    "build": "vite build --mode production --open",
-    "preview": "vite preview   --open"
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview --open --port 8888",
+    "eslint": "eslint --init",
+    "lint": "eslint --ext .ts --ext .vue  --ext js  src/"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
+    "good-storage": "^1.1.1",
     "vue": "^3.2.45"
   },
   "devDependencies": {
+    "@types/good-storage": "^1.1.0",
     "@types/node": "^18.11.18",
     "@vitejs/plugin-vue": "^4.0.0",
     "typescript": "^4.9.3",
