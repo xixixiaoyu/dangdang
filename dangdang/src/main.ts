@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 import "./style.css";
 import App from "./App.vue";
-console.log("环境变量", import.meta.env);
-
+import { LmgLoader } from "./utils/imgUtil";
+LmgLoader.storageAllImg.apply(LmgLoader);
 createApp(App).mount("#app");
